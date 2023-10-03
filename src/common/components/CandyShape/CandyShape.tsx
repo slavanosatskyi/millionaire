@@ -11,12 +11,12 @@ interface CandyShapeProps {
 function CandyShape({ children, borderClass, contentClass }: PropsWithChildren<CandyShapeProps>) {
   return (
     <div className="candy-shape">
-      <div className={classnames('candy-shape__line', borderClass)} />
       <div className={classnames('candy-shape__border', borderClass)}>
         <div className={classnames('candy-shape__content', contentClass)}>
           {children}
         </div>
       </div>
+      <div className={classnames('candy-shape__line', borderClass)} />
     </div>
   );
 }

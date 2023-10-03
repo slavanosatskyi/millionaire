@@ -1,0 +1,67 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.option {
+    &__value {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 20px 40px;
+        cursor: pointer;
+
+        @include desktop {
+            font-size: 20px;
+        }
+
+        &::before {
+            color: $orange;
+            counter-increment: item;
+            content: counter(item, upper-alpha) " ";
+            font-weight: 600;
+            margin-right: 8px;
+        }
+    }
+
+    &__border {
+        &--inactive {
+            background-color: $black40;
+
+            &:hover {
+                background-color: $orange;
+
+                &~* {
+                    background-color: $orange;
+                }
+            }
+        }
+
+        &--wrong {
+            background-color: $red;
+        }
+
+        &--correct {
+            background-color: $green;
+        }
+
+        &--selected {
+            background-color: $orange;
+        }
+    }
+
+    &__content {
+        &--inactive {
+            background-color: $white;
+        }
+
+        &--wrong {
+            background-color: $red5;
+        }
+
+        &--correct {
+            background-color: $green5;
+        }
+
+        &--selected {
+            background-color: $orange5;
+        }
+    }
+}

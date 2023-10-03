@@ -59,6 +59,7 @@ $shape: polygon(6.1% 7.389%,
         transform: translateY(-50%);
         height: 1px;
         width: 100%;
+        z-index: -1;
     }
 
     &__border {
@@ -70,6 +71,5 @@ $shape: polygon(6.1% 7.389%,
 
     &__content {
         clip-path: $shape;
-        padding: 0 80px;
     }
 }

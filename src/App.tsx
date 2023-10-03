@@ -1,26 +1,14 @@
-import Result from 'features/resultScreen';
-
-import './App.scss';
+import OptionStatus from 'types';
+import Option from 'features/game/components/Option/Option';
 
 function App() {
   return (
-    // <div className="App">
-    //   <h1>Millionaire</h1>
-    //   <Button text="Test button" />
-    //   <CandyShape contentClass="option content--inactive" borderClass="border--inactive">
-    //     Inactive
-    //   </CandyShape>
-    //   <CandyShape contentClass="option content--correct" borderClass="border--correct">
-    //     Correct
-    //   </CandyShape>
-    //   <CandyShape contentClass="option content--wrong" borderClass="border--wrong">
-    //     Wrong
-    //   </CandyShape>
-    //   <CandyShape contentClass="option content--selected" borderClass="border--selected">
-    //     Selected
-    //   </CandyShape>
-    // </div>
-    <Result />
+    <ol>
+      <Option status={OptionStatus.INACTIVE} value="14" />
+      <Option status={OptionStatus.WRONG} value="15" />
+      <Option status={OptionStatus.CORRECT} value="16" />
+      <Option status={OptionStatus.SELECTED} value="17" />
+    </ol>
   );
 }
 
