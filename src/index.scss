@@ -17,8 +17,13 @@ button {
 
 p,
 h1,
-body {
+body,
+ul {
   margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 h1 {

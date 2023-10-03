@@ -11,6 +11,12 @@ export enum QuestionStatus {
   ANSWERED,
 }
 
+export enum AppStatus {
+  NOT_STARTED,
+  ACTIVE,
+  FINISHED,
+}
+
 export type Option = {
   id: string;
   value: string;

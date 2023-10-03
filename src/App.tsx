@@ -1,25 +1,19 @@
-import Menu from 'features/game/components/Menu/Menu';
-import { QuestionStatus } from 'types';
+import Game from 'features/game';
+import Result from 'features/resultScreen';
+import Start from 'features/startScreen';
+import { AppStatus } from 'types';
 
-const menuItems = [{
-  value: '$100,000',
-  status: QuestionStatus.NOT_STARTED,
-  id: '3',
-}, {
-  value: '$50,000',
-  status: QuestionStatus.ACTIVE,
-  id: '2',
-},
-{
-  value: '$10,000',
-  status: QuestionStatus.ANSWERED,
-  id: '3',
-}];
+const APP_STATUS: AppStatus = AppStatus.NOT_STARTED;
 
 function App() {
-  return (
-    <Menu menuItems={menuItems} isOpen={false} />
-  );
+  switch (APP_STATUS) {
+    case AppStatus.ACTIVE:
+      return <Game />;
+    case AppStatus.FINISHED:
+      return <Result />;
+    default:
+      return <Start />;
+  }
 }
 
 export default App;

@@ -1,0 +1,23 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.game {
+    background-color: $black5;
+    height: 100%;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 376px;
+    }
+
+    &__open-menu {
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+
+        &:hover>svg {
+            fill: $black40;
+        }
+    }
+}

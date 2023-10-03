@@ -2,9 +2,17 @@
 @import "../../../../styles/variables";
 
 .menu {
+    position: absolute;
+    inset: 0;
     padding: 64px 0 32px 0;
     background-color: $black5;
     height: 100%;
+
+    @include desktop {
+        position: static;
+        padding-top: 106px;
+        background-color: $white;
+    }
 
     &--closed {
         display: none;
@@ -12,11 +20,6 @@
         @include desktop {
             display: block;
         }
-    }
-
-    @include desktop {
-        padding-top: 106px;
-        background-color: $white;
     }
 
     &__item {

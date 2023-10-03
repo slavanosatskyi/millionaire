@@ -8,7 +8,7 @@
     padding: 136px 0 24px;
 
     @include desktop {
-        padding: 133px 141px 122px 80px;
+        padding: 133px 80px 122px 80px;
     }
 
     &__text {
@@ -17,9 +17,9 @@
         text-align: center;
 
         @include desktop {
+            width: 80%;
             text-align: left;
             font-size: 32px;
-            margin-right: 360px;
         }
     }
 

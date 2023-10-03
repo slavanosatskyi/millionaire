@@ -1,0 +1,22 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+.menu-button {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    &>svg {
+        transition: fill $transition;
+        fill: $black;
+    }
+
+    &:hover>svg {
+        fill: $black40;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
