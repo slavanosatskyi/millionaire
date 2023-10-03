@@ -20,7 +20,7 @@ function App() {
     //     Selected
     //   </CandyShape>
     // </div>
-    <Info buttonText="Start">Who wants to be a millionaire?</Info>
+    <Info buttonText="Start" className="start-screen"><h1>Who wants to be a millionaire?</h1></Info>
 
   );
 }
