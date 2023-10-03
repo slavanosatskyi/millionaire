@@ -5,6 +5,12 @@ export enum OptionStatus {
   CORRECT,
 }
 
+export enum QuestionStatus {
+  NOT_STARTED,
+  ACTIVE,
+  ANSWERED,
+}
+
 export type Option = {
   id: string;
   value: string;

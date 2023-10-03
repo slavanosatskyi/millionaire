@@ -1,0 +1,33 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/variables";
+
+
+.menu-item {
+    &__border {
+        background-color: $black40;
+
+        &--active {
+            background-color: $orange;
+        }
+    }
+
+    &__content {
+        font-size: 14px;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: $white;
+
+        @include desktop {
+            font-size: 20px;
+        }
+
+        &--active {
+            color: $orange;
+        }
+
+        &--answered {
+            color: $black5;
+        }
+    }
+}
