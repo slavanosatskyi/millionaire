@@ -8,5 +8,17 @@
     ],
     "parserOptions": {
         "project": "./tsconfig.json"
-    }
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.ts?(x)"
+            ],
+            "rules": {
+                "react/require-default-props": [
+                    0
+                ]
+            }
+        }
+    ]
 }

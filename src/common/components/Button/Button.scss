@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.button {
+    color: $white;
+    background-color: $orange;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 116%;
+    text-align: center;
+    width: 288px;
+    height: 48px;
+    transition: background-color $transition;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $orange80;
+    }
+
+    &:active {
+        background-color: $orange120;
+    }
+
+    @include desktop {
+        border-radius: 12px;
+        font-size: 20px;
+        width: 296px;
+        height: 64px;
+    }
+}
