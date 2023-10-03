@@ -6,15 +6,20 @@ import './Info.scss';
 
 interface InfoProps {
   buttonText: string;
+  onClick: () => void;
   className?: string;
 }
 
-function Info({ children, buttonText, className }: PropsWithChildren<InfoProps>) {
+function Info({
+  children, buttonText, className, onClick,
+}: PropsWithChildren<InfoProps>) {
   return (
     <div className={classnames('info', className)}>
       <div className="info__image" />
       <div className="info__content">{children}</div>
-      <div className="info__button"><Button text={buttonText} /></div>
+      <div className="info__button">
+        <Button text={buttonText} onClick={onClick} />
+      </div>
     </div>
   );
 }

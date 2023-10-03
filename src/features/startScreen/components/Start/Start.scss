@@ -1,0 +1,16 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+
+.start-screen {
+    background: linear-gradient(to right bottom,
+            $white 0%,
+            $white 50%,
+            $orange5 50%,
+            $orange5 100%);
+
+    @include desktop {
+        &__content {
+            font-size: 56px;
+        }
+    }
+}

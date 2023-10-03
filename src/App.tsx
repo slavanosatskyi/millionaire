@@ -1,4 +1,4 @@
-import { Info } from './common/components';
+import Result from 'features/resultScreen';
 
 import './App.scss';
 
@@ -20,8 +20,7 @@ function App() {
     //     Selected
     //   </CandyShape>
     // </div>
-    <Info buttonText="Start" className="start-screen"><h1>Who wants to be a millionaire?</h1></Info>
-
+    <Result />
   );
 }
 

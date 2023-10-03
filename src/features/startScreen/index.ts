@@ -1,3 +1,3 @@
-import StartScreen from './components/Start/Start';
+import Start from './components/Start/Start';
 
-export default StartScreen;
+export default Start;
