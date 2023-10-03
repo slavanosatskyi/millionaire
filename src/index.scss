@@ -33,17 +33,3 @@ body {
 #root {
   height: 100%;
 }
-
-
-//////
-ol {
-  counter-reset: item;
-  list-style-type: none;
-  padding: 0;
-
-  &>div {
-    margin-bottom: 20px;
-  }
-}
-
-/// ///

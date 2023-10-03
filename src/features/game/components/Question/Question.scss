@@ -1,0 +1,32 @@
+@import "../../../../styles/mixins";
+
+.question {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 136px 0 24px;
+
+    @include desktop {
+        padding: 133px 141px 122px 80px;
+    }
+
+    &__text {
+        font-size: 18px;
+        margin: 0 16px 20px 16px;
+        text-align: center;
+
+        @include desktop {
+            text-align: left;
+            font-size: 32px;
+            margin-right: 360px;
+        }
+    }
+
+    &__options {
+        margin: auto;
+        margin-bottom: 0;
+        max-width: 1220px;
+        width: 100%;
+    }
+}

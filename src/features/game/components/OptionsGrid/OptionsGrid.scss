@@ -1,0 +1,14 @@
+@import "../../../../styles/mixins";
+
+.options-grid {
+    display: grid;
+    row-gap: 8px;
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 32px;
+    }
+}

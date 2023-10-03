@@ -63,10 +63,12 @@ $shape: polygon(6.1% 7.389%,
     }
 
     &__border {
+        display: block;
         padding: 1px;
         width: 80%;
         margin: 0 auto;
         clip-path: $shape;
+        text-align: left;
     }
 
     &__content {
