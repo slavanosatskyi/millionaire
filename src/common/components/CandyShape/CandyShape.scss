@@ -52,6 +52,7 @@ $shape: polygon(6.1% 7.389%,
 
 .candy-shape {
     position: relative;
+    z-index: 0;
 
     &__line {
         position: absolute;

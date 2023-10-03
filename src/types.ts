@@ -22,3 +22,9 @@ export type Question = {
   answers: string[];
   options: Option[];
 };
+
+export type MenuItem = {
+  id: string;
+  status: QuestionStatus;
+  value: string;
+};
