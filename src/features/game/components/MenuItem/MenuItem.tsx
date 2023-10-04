@@ -1,25 +1,29 @@
+import { selectCurrentQuestionIndex } from 'appSlice';
 import classnames from 'classnames';
 import { CandyShape } from 'common/components';
-import { QuestionStatus } from 'types';
+import { useSelector } from 'react-redux';
+import toUSDollar from 'utils/format';
 import './MenuItem.scss';
 
 interface MenuItemProps {
-  value: string;
-  status: QuestionStatus;
+  value: number;
+  index: number;
 }
 
-function MenuItem({ value, status }: MenuItemProps) {
+function MenuItem({ value, index }: MenuItemProps) {
+  const currentQuestionIndex = useSelector(selectCurrentQuestionIndex);
+
   return (
     <CandyShape
       borderClass={classnames('menu-item__border', {
-        'menu-item__border--active': status === QuestionStatus.ACTIVE,
+        'menu-item__border--active': index === currentQuestionIndex,
       })}
       contentClass={classnames('menu-item__content', {
-        'menu-item__content--active': status === QuestionStatus.ACTIVE,
-        'menu-item__content--answered': status === QuestionStatus.ANSWERED,
+        'menu-item__content--active': index === currentQuestionIndex,
+        'menu-item__content--answered': currentQuestionIndex > index,
       })}
     >
-      {value}
+      {toUSDollar(value)}
     </CandyShape>
   );
 }

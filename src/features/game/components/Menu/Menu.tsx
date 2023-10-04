@@ -20,10 +20,10 @@ function Menu({ menuItems, isOpen, onClose }: MenuProps) {
       <MenuButton onClick={onClose}>
         <CloseIcon />
       </MenuButton>
-      {menuItems.map(({ id, status, value }) => (
+      {menuItems.map(({ id, value }, index) => (
         <li key={id} className="menu__item">
           <MenuItem
-            status={status}
+            index={index}
             value={value}
           />
         </li>

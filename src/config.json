@@ -1,0 +1,314 @@
+[
+    {
+        "id": "q1",
+        "question": "What is the capital of France?",
+        "value": 500,
+        "options": [
+            {
+                "id": "q1o1",
+                "value": "Berlin"
+            },
+            {
+                "id": "q1o2",
+                "value": "Madrid"
+            },
+            {
+                "id": "q1o3",
+                "value": "Paris"
+            },
+            {
+                "id": "q1o4",
+                "value": "Rome"
+            }
+        ],
+        "answers": [
+            "q1o3"
+        ]
+    },
+    {
+        "id": "q2",
+        "value": 1000,
+        "question": "Which planet is known as the 'Red Planet'?",
+        "options": [
+            {
+                "id": "q2o1",
+                "value": "Venus"
+            },
+            {
+                "id": "q2o2",
+                "value": "Jupiter"
+            },
+            {
+                "id": "q2o3",
+                "value": "Mars"
+            },
+            {
+                "id": "q2o4",
+                "value": "Saturn"
+            }
+        ],
+        "answers": [
+            "q2o3"
+        ]
+    },
+    {
+        "id": "q3",
+        "value": 2000,
+        "question": "What is the chemical symbol for gold?",
+        "options": [
+            {
+                "id": "q3o1",
+                "value": "Au"
+            },
+            {
+                "id": "q3o2",
+                "value": "Ag"
+            },
+            {
+                "id": "q3o3",
+                "value": "Cu"
+            },
+            {
+                "id": "q3o4",
+                "value": "Fe"
+            }
+        ],
+        "answers": [
+            "q3o1"
+        ]
+    },
+    {
+        "id": "q4",
+        "value": 4000,
+        "question": "Which gas makes up the majority of Earth's atmosphere?",
+        "options": [
+            {
+                "id": "q4o1",
+                "value": "Oxygen"
+            },
+            {
+                "id": "q4o2",
+                "value": "Nitrogen"
+            },
+            {
+                "id": "q4o3",
+                "value": "Carbon dioxide"
+            },
+            {
+                "id": "q4o4",
+                "value": "Hydrogen"
+            }
+        ],
+        "answers": [
+            "q4o2"
+        ]
+    },
+    {
+        "id": "q5",
+        "value": 8000,
+        "question": "Who wrote the play 'Romeo and Juliet'?",
+        "options": [
+            {
+                "id": "q5o1",
+                "value": "Charles Dickens"
+            },
+            {
+                "id": "q5o2",
+                "value": "Jane Austen"
+            },
+            {
+                "id": "q5o3",
+                "value": "William Shakespeare"
+            },
+            {
+                "id": "q5o4",
+                "value": "Leo Tolstoy"
+            }
+        ],
+        "answers": [
+            "q5o3"
+        ]
+    },
+    {
+        "id": "q6",
+        "value": 16000,
+        "question": "Which animal is known as the 'King of the Jungle'?",
+        "options": [
+            {
+                "id": "q6o1",
+                "value": "Tiger"
+            },
+            {
+                "id": "q6o2",
+                "value": "Elephant"
+            },
+            {
+                "id": "q6o3",
+                "value": "Lion"
+            },
+            {
+                "id": "q6o4",
+                "value": "Giraffe"
+            }
+        ],
+        "answers": [
+            "q6o3"
+        ]
+    },
+    {
+        "id": "q7",
+        "value": 32000,
+        "question": "Which country is known as the 'Land of the Rising Sun'?",
+        "options": [
+            {
+                "id": "q7o1",
+                "value": "China"
+            },
+            {
+                "id": "q7o2",
+                "value": "South Korea"
+            },
+            {
+                "id": "q7o3",
+                "value": "Japan"
+            },
+            {
+                "id": "q7o4",
+                "value": "Thailand"
+            }
+        ],
+        "answers": [
+            "q7o3"
+        ]
+    },
+    {
+        "id": "q8",
+        "value": 64000,
+        "question": "What is the largest planet in our solar system?",
+        "options": [
+            {
+                "id": "q8o1",
+                "value": "Mercury"
+            },
+            {
+                "id": "q8o2",
+                "value": "Venus"
+            },
+            {
+                "id": "q8o3",
+                "value": "Earth"
+            },
+            {
+                "id": "q8o4",
+                "value": "Jupiter"
+            }
+        ],
+        "answers": [
+            "q8o4"
+        ]
+    },
+    {
+        "id": "q9",
+        "value": 100000,
+        "question": "Which famous scientist developed the theory of general relativity?",
+        "options": [
+            {
+                "id": "q9o1",
+                "value": "Isaac Newton"
+            },
+            {
+                "id": "q9o2",
+                "value": "Galileo Galilei"
+            },
+            {
+                "id": "q9o3",
+                "value": "Albert Einstein"
+            },
+            {
+                "id": "q9o4",
+                "value": "Stephen Hawking"
+            }
+        ],
+        "answers": [
+            "q9o3"
+        ]
+    },
+    {
+        "id": "q10",
+        "value": 250000,
+        "question": "In which year did Christopher Columbus first arrive in the Americas?",
+        "options": [
+            {
+                "id": "q10o1",
+                "value": "1492"
+            },
+            {
+                "id": "q10o2",
+                "value": "1620"
+            },
+            {
+                "id": "q10o3",
+                "value": "1776"
+            },
+            {
+                "id": "q10o4",
+                "value": "1812"
+            }
+        ],
+        "answers": [
+            "q10o1"
+        ]
+    },
+    {
+        "id": "q11",
+        "value": 500000,
+        "question": "What is the largest mammal on Earth?",
+        "options": [
+            {
+                "id": "q11o1",
+                "value": "Elephant"
+            },
+            {
+                "id": "q11o2",
+                "value": "Blue Whale"
+            },
+            {
+                "id": "q11o3",
+                "value": "Giraffe"
+            },
+            {
+                "id": "q11o4",
+                "value": "Hippopotamus"
+            }
+        ],
+        "answers": [
+            "q11o2"
+        ]
+    },
+    {
+        "id": "q12",
+        "value": 1000000,
+        "question": "Which gas do plants absorb from the atmosphere during photosynthesis?",
+        "options": [
+            {
+                "id": "q12o1",
+                "value": "Oxygen"
+            },
+            {
+                "id": "q12o2",
+                "value": "Carbon dioxide"
+            },
+            {
+                "id": "q12o3",
+                "value": "Nitrogen"
+            },
+            {
+                "id": "q12o4",
+                "value": "Hydrogen"
+            }
+        ],
+        "answers": [
+            "q12o2"
+        ]
+    }
+]

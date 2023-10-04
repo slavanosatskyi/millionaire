@@ -1,12 +1,14 @@
+import { selectAppStatus } from 'appSlice';
 import Game from 'features/game';
 import Result from 'features/resultScreen';
 import Start from 'features/startScreen';
+import { useSelector } from 'react-redux';
 import { AppStatus } from 'types';
 
-const APP_STATUS: AppStatus = AppStatus.NOT_STARTED;
-
 function App() {
-  switch (APP_STATUS) {
+  const status = useSelector(selectAppStatus);
+
+  switch (status) {
     case AppStatus.ACTIVE:
       return <Game />;
     case AppStatus.FINISHED:

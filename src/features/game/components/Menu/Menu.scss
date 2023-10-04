@@ -2,11 +2,15 @@
 @import "../../../../styles/variables";
 
 .menu {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     position: absolute;
     inset: 0;
     padding: 64px 0 32px 0;
     background-color: $black5;
     height: 100%;
+
 
     @include desktop {
         position: static;
@@ -18,7 +22,7 @@
         display: none;
 
         @include desktop {
-            display: block;
+            display: flex;
         }
     }
 

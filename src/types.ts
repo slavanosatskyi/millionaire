@@ -5,12 +5,6 @@ export enum OptionStatus {
   CORRECT,
 }
 
-export enum QuestionStatus {
-  NOT_STARTED,
-  ACTIVE,
-  ANSWERED,
-}
-
 export enum AppStatus {
   NOT_STARTED,
   ACTIVE,
@@ -20,17 +14,17 @@ export enum AppStatus {
 export type Option = {
   id: string;
   value: string;
-  status: OptionStatus;
-};
-
-export type Question = {
-  question: string;
-  answers: string[];
-  options: Option[];
 };
 
 export type MenuItem = {
   id: string;
-  status: QuestionStatus;
-  value: string;
+  value: number;
+};
+
+export type Question = {
+  id: string;
+  question: string;
+  value: number;
+  answers: string[];
+  options: Option[];
 };

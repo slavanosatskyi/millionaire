@@ -1,12 +1,17 @@
+import { setStatus } from 'appSlice';
 import { Info } from 'common/components';
+import { useDispatch } from 'react-redux';
+import { AppStatus } from 'types';
 import './Start.scss';
 
 function Start() {
+  const dispatch = useDispatch();
+
   return (
     <Info
       buttonText="Start"
       className="start-screen"
-      onClick={() => console.log('Start game')}
+      onClick={() => dispatch(setStatus(AppStatus.ACTIVE))}
     >
       <h1 className="start-screen__content">
         Who wants to be a millionaire?
