@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import store from 'store';
+import { store, persistor } from 'store';
 import App from 'App';
 import questions from 'config.json';
 import { setQuestions } from 'features/game/appSlice';
 import validateQuestions from 'utils/validation';
 
 import 'index.scss';
+import { PersistGate } from 'redux-persist/integration/react';
 
 function main() {
   const errors = validateQuestions(questions);
@@ -25,7 +26,9 @@ function main() {
     store.dispatch(setQuestions(questions));
     content = (
       <Provider store={store}>
-        <App />
+        <PersistGate loading={null} persistor={persistor}>
+          <App />
+        </PersistGate>
       </Provider>
     );
   }
