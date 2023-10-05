@@ -11,6 +11,12 @@ export enum AppStatus {
   FINISHED,
 }
 
+export enum MenuItemStatus {
+  NOT_ANSWERED,
+  ACTIVE,
+  ANSWERED,
+}
+
 export type Option = {
   id: string;
   value: string;

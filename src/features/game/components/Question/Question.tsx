@@ -1,4 +1,5 @@
 import { selectCurrentQuestion } from 'features/game/selectors';
+import { memo } from 'react';
 import { useSelector } from 'react-redux';
 import OptionsGrid from '../OptionsGrid/OptionsGrid';
 import './Question.scss';
@@ -20,4 +21,4 @@ function Question() {
   );
 }
 
-export default Question;
+export default memo(Question);

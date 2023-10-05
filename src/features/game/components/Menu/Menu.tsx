@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { MenuItem as MenuItemType } from 'types';
 import MenuButton from '../MenuButton/MenuButton';
-import MenuItem from '../MenuItem/MenuItem';
+import MenuItems from '../MenuItems/MenuItems';
 import { ReactComponent as CloseIcon } from './close.svg';
 import './Menu.scss';
 
@@ -20,14 +20,7 @@ function Menu({ menuItems, isOpen, onClose }: MenuProps) {
       <MenuButton onClick={onClose}>
         <CloseIcon />
       </MenuButton>
-      {menuItems.map(({ id, value }, index) => (
-        <li key={id} className="menu__item">
-          <MenuItem
-            index={index}
-            value={value}
-          />
-        </li>
-      ))}
+      <MenuItems menuItems={menuItems} />
     </ul>
   );
 }
