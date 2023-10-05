@@ -6,5 +6,14 @@ export const selectCurrentQuestion = (state: RootState) => state
   .questions[state.app.currentQuestionIndex];
 export const selectAllQuestions = (state: RootState) => state.app.questions;
 export const selectCurrentQuestionIndex = (state: RootState) => state.app.currentQuestionIndex;
-export const selectTotalScore = (state: RootState) => (state.app.currentQuestionIndex === 0
-  ? 0 : state.app.questions[state.app.currentQuestionIndex - 1].value);
+export const selectTotalScore = (state: RootState) => {
+  if (state.app.currentQuestionIndex === 0) {
+    return 0;
+  }
+
+  if (state.app.currentQuestionIndex === state.app.questions.length - 1) {
+    return state.app.questions[state.app.currentQuestionIndex].value;
+  }
+
+  return state.app.questions[state.app.currentQuestionIndex - 1].value;
+};
