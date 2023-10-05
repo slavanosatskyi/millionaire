@@ -1,6 +1,6 @@
-import { selectCurrentQuestionIndex } from 'appSlice';
 import classnames from 'classnames';
 import { CandyShape } from 'common/components';
+import { selectCurrentQuestionIndex } from 'features/game/selectors';
 import { useSelector } from 'react-redux';
 import toUSDollar from 'utils/format';
 import './MenuItem.scss';

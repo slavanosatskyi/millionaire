@@ -1,4 +1,4 @@
-import { setStatus } from 'appSlice';
+import { setStatus } from 'features/game/appSlice';
 import { Info } from 'common/components';
 import { useDispatch } from 'react-redux';
 import { AppStatus } from 'types';

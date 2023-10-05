@@ -2,9 +2,9 @@ import classnames from 'classnames';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { AppStatus, Option as OptionType } from 'types';
-import { nextQuestion, setStatus } from 'appSlice';
+import { nextQuestion, setStatus } from 'features/game/appSlice';
 import Option from '../Option/Option';
-import getOptionStatus from './utils';
+import getOptionStatus from './OptionsGrid.utils';
 import './OptionsGrid.scss';
 
 interface OptionsGridProps {

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { selectAllQuestions } from 'appSlice';
+import { selectAllQuestions } from 'features/game/selectors';
 import Menu from '../Menu/Menu';
 import Question from '../Question/Question';
 import { ReactComponent as MenuIcon } from './menu.svg';

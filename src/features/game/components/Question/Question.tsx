@@ -1,4 +1,4 @@
-import { selectCurrentQuestion } from 'appSlice';
+import { selectCurrentQuestion } from 'features/game/selectors';
 import { useSelector } from 'react-redux';
 import OptionsGrid from '../OptionsGrid/OptionsGrid';
 import './Question.scss';

@@ -1,4 +1,5 @@
-import { selectTotalScore, setStatus } from 'appSlice';
+import { setStatus } from 'features/game/appSlice';
+import { selectTotalScore } from 'features/game/selectors';
 import { Info } from 'common/components';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppStatus } from 'types';

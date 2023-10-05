@@ -1,7 +1,5 @@
-import { selectAppStatus } from 'appSlice';
-import Game from 'features/game';
-import Result from 'features/resultScreen';
-import Start from 'features/startScreen';
+import { Game, Result, Start } from 'features/game';
+import { selectAppStatus } from 'features/game/selectors';
 import { useSelector } from 'react-redux';
 import { AppStatus } from 'types';
 
