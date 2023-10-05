@@ -1,6 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AppStatus, Question } from 'types';
-import questionsConfig from 'config.json';
 
 interface AppState {
   status: AppStatus;
@@ -11,14 +10,17 @@ interface AppState {
 const initialState: AppState = {
   status: AppStatus.NOT_STARTED,
   currentQuestionIndex: 0,
-  questions: questionsConfig,
+  questions: [],
 };
 
 export const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    setStatus: (state, action) => {
+    setQuestions: (state, action: PayloadAction<Question[]>) => {
+      state.questions = action.payload;
+    },
+    setStatus: (state, action: PayloadAction<AppStatus>) => {
       if (action.payload === AppStatus.ACTIVE) {
         state.currentQuestionIndex = 0;
       }
@@ -34,6 +36,6 @@ export const appSlice = createSlice({
   },
 });
 
-export const { setStatus, nextQuestion } = appSlice.actions;
+export const { setStatus, nextQuestion, setQuestions } = appSlice.actions;
 
 export default appSlice.reducer;
