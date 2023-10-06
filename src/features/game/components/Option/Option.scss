@@ -26,11 +26,13 @@
         &--inactive {
             background-color: $black40;
 
-            &:hover {
-                background-color: $orange;
-
-                &~div {
+            @media (hover: hover) {
+                &:hover {
                     background-color: $orange;
+
+                    &~div {
+                        background-color: $orange;
+                    }
                 }
             }
         }

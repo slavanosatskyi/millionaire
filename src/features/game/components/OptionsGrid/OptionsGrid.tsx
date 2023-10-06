@@ -25,12 +25,21 @@ function OptionsGrid({ options, answers, className }: OptionsGridProps) {
           value={value}
           status={getOptionStatus(id, answers, playerAnswers)}
           onClick={() => {
-            const updatedPlayerAnswers = [...playerAnswers, id];
+            if (playerAnswers.length === answers.length) {
+              return;
+            }
+
+            const updatedPlayerAnswers = playerAnswers.includes(id)
+              ? playerAnswers.filter((playerAnswerId) => playerAnswerId !== id)
+              : [...playerAnswers, id];
             if (updatedPlayerAnswers.length <= answers.length) {
-              setAnswers([...playerAnswers, id]);
+              setAnswers(updatedPlayerAnswers);
             }
 
             if (updatedPlayerAnswers.length === answers.length) {
+              // let user see correct answer for a second
+              // only after that move to the next question
+              // or finish the game
               setTimeout(() => {
                 if (updatedPlayerAnswers.every((answerId) => answers.includes(answerId))) {
                   dispatch(nextQuestion());

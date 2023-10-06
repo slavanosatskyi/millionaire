@@ -80,5 +80,6 @@ $shape: polygon(6.1% 7.389%,
     &__content {
         height: 100%;
         clip-path: $shape;
+        transition: all $transition;
     }
 }
