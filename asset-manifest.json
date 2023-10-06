@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/millionaire/static/css/main.a3202f84.css",
-    "main.js": "/millionaire/static/js/main.2cd20dea.js",
+    "main.css": "/millionaire/static/css/main.839062ae.css",
+    "main.js": "/millionaire/static/js/main.8639532c.js",
     "static/media/close.svg": "/millionaire/static/media/close.1894f036ec39015f583c975c7e91e536.svg",
     "static/media/menu.svg": "/millionaire/static/media/menu.5897035ad3ab1d9677f5ec9e05294f2b.svg",
     "index.html": "/millionaire/index.html",
-    "main.a3202f84.css.map": "/millionaire/static/css/main.a3202f84.css.map",
-    "main.2cd20dea.js.map": "/millionaire/static/js/main.2cd20dea.js.map"
+    "main.839062ae.css.map": "/millionaire/static/css/main.839062ae.css.map",
+    "main.8639532c.js.map": "/millionaire/static/js/main.8639532c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3202f84.css",
-    "static/js/main.2cd20dea.js"
+    "static/css/main.839062ae.css",
+    "static/js/main.8639532c.js"
   ]
 }
