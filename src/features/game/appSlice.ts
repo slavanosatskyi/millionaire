@@ -28,10 +28,9 @@ export const appSlice = createSlice({
       state.status = action.payload;
     },
     nextQuestion: (state) => {
-      if (state.currentQuestionIndex === state.questions.length - 1) {
+      state.currentQuestionIndex += 1;
+      if (state.currentQuestionIndex === state.questions.length) {
         state.status = AppStatus.FINISHED;
-      } else {
-        state.currentQuestionIndex += 1;
       }
     },
   },

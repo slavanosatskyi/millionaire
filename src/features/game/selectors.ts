@@ -11,9 +11,5 @@ export const selectTotalScore = (state: RootState) => {
     return 0;
   }
 
-  if (state.app.currentQuestionIndex === state.app.questions.length - 1) {
-    return state.app.questions[state.app.currentQuestionIndex].value;
-  }
-
   return state.app.questions[state.app.currentQuestionIndex - 1].value;
 };

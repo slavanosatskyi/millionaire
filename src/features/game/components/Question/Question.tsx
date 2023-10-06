@@ -5,9 +5,15 @@ import OptionsGrid from '../OptionsGrid/OptionsGrid';
 import './Question.scss';
 
 function Question() {
+  const currentQuestion = useSelector(selectCurrentQuestion);
+  if (!currentQuestion) {
+    return null;
+  }
+
   const {
     id, question, options, answers,
-  } = useSelector(selectCurrentQuestion);
+  } = currentQuestion;
+
   return (
     <section className="question">
       <h1 className="question__text">{question}</h1>
